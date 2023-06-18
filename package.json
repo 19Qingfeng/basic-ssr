@@ -1,0 +1,32 @@
+{
+  "name": "diy-streaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel \"dev:*\"",
+    "dev:server": "cross-env NODE_ENV=development babel-node server.entry.js",
+    "dev:client": "cross-env NODE_ENV=development rollup -c -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.1",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "react": "0.0.0-experimental-613e6f5fc-20230616",
+    "react-dom": "0.0.0-experimental-613e6f5fc-20230616",
+    "rollup": "^3.25.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "npm-run-all": "^4.1.5"
+  }
+}
